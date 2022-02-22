@@ -1,3 +1,4 @@
+var js_log = window.location.origin + '/ws/report_errors.php';
 window.onerror = (function (server_script) {
     "use strict";
 
@@ -22,4 +23,4 @@ window.onerror = (function (server_script) {
 
         return false;
     };
-}('/report-errors.php'));
+}(js_log));
